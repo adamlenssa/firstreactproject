@@ -1,6 +1,6 @@
-import "../css/header.css";
+import "./header.css";
 
-export function HeaderMake() {
+export function Header() {
   return (
     <header id="header">
       <h1>Fullmetal Alchemist</h1>

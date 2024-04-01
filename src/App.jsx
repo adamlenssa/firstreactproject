@@ -1,16 +1,17 @@
-import "../css/reset.css";
-import "../css/body.css";
-import { data } from "./assets/fma-data";
-import Table from "../Website Components/Table";
-import { HeaderMake } from "../Website Components/HeaderMake";
-import { Cards } from "../Website Components/Cards";
+import "./css/reset.css";
+import "./css/body.css";
+import { data } from "./Constance/fma-data.ts";
+import { Header } from "./Components/Header/Header";
+import CharacterRatingsTable from "./Components/CharacterRatings/CharacterRatingsTable";
+import { CharacterCards } from "./Components/CharacterCards/CharacterCards.jsx";
 
 function App() {
+  console.log(data);
   return (
     <>
-      <HeaderMake />
-      <Table data={data} key={"table"} />
-      <Cards data={data} key={"cards"} />
+      <Header />
+      <CharacterRatingsTable data={data} />
+      <CharacterCards data={data} />
     </>
   );
 }
